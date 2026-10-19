@@ -783,44 +783,45 @@
     <h3>Request a free quote</h3>
     <div class="form-row">
       <div class="form-group">
-        <label for="FirstName">First name</label>
-        <input type="text" id="FirstName" name="FirstName" placeholder="Anna">
+        <label for="FirstName">Fornavn<span style="color:#C0392B"> *</span></label>
+        <input type="text" id="FirstName" name="FirstName" placeholder="Anna" required>
       </div>
       <div class="form-group">
-        <label for="LastName">Last name</label>
-        <input type="text" id="LastName" name="LastName" placeholder="Larsen">
+        <label for="LastName">Etternavn<span style="color:#C0392B"> *</span></label>
+        <input type="text" id="LastName" name="LastName" placeholder="Larsen" required>
       </div>
     </div>
     <div class="form-group">
-      <label for="Email">Work email</label>
+      <label for="Email">E-post<span style="color:#C0392B"> *</span></label>
       <input type="email" id="Email" name="Email" placeholder="anna@company.no" required>
     </div>
     <div class="form-row">
       <div class="form-group">
-        <label for="Mobile">Mobile</label>
+        <label for="Mobile">Telefon</label>
         <input type="tel" id="Mobile" name="Mobile" placeholder="+47 900 00 000">
       </div>
       <div class="form-group">
-        <label for="City">City</label>
+        <label for="City">Stad</label>
         <input type="text" id="City" name="City" placeholder="Oslo">
       </div>
     </div>
     <div class="form-group">
-      <label for="Company">Company name</label>
-      <input type="text" id="Company" name="Company" placeholder="Your company AS">
+      <label for="Company">Selskap<span style="color:#C0392B"> *</span></label>
+      <input type="text" id="Company" name="Company" placeholder="Ditt selskap AS" required>
     </div>
     <div class="form-group">
-      <label for="Description">What do you need cleaned?</label>
-      <textarea rows="2" id="Description" name="Description" placeholder="E.g. 300 m² office, daily cleaning"></textarea>
+      <label for="Description">Hva kan vi hjelpe deg med?</label>
+      <textarea rows="3" id="Description" name="Description" placeholder="Melding"></textarea>
     </div>
     <div class="form-group">
-      <label for="Comment">Anything else we should know?</label>
-      <textarea rows="3" id="Comment" name="Comment" placeholder="E.g. special requirements, sensitive areas, access constraints..."></textarea>
+      <label for="Comment">Noe annet vi bør vite?</label>
+      <textarea rows="2" id="Comment" name="Comment" placeholder="F.eks. spesielle behov, sensitive områder, adgang..."></textarea>
     </div>
     <label style="display:flex; gap:10px; align-items:flex-start; font-size:13px; color:var(--muted); margin-bottom:16px;">
       <input type="checkbox" name="DataConsent" value="true" style="margin-top:4px;">
-      I agree that ClearSpace may store and process my data to respond to this request.
+      Jeg samtykker til at ClearSpace lagrer og behandler opplysningene mine for å svare på henvendelsen.
     </label>
+    <p style="font-size:13px; color:var(--muted); margin-bottom:8px;">*Obligatoriske felt.</p>
     <button type="submit" class="form-submit">Send my request →</button>
   </form>
 </section>
